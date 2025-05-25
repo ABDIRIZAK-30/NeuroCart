@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="/images/logo/fav-icon.png">
     <script src="main.js"></script>
@@ -14,59 +13,59 @@
 
 <body>
     <!-- Header-info -->
-    <header class="box-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header class="box-container">
 
 
 
-        <nav class="top-menu flex justify-between items-center w-full h-20 fixed md:relative top-0 left-0 z-50 bg-gradient-to-r from-pink-100 to-purple-100 md:bg-transparent px-4 sm:px-6 lg:px-0">
+        <nav class="top-menu">
             <div class="logo">
-                <img src="images/logo/NeuroCart.png" alt="Nove-serve logo" class="w-36 h-auto rounded-none">
+                <img src="images/logo/NeuroCart.png" alt="Nove-serve logo">
             </div>
 
-            <div class="burger md:hidden cursor-pointer absolute right-5 top-6 z-20">
-                <span class="block mb-1 h-0.5 w-6 bg-gray-800 transition-all duration-300 ease-in-out"></span>
-                <span class="block mb-1 h-0.5 w-6 bg-gray-800 transition-all duration-300 ease-in-out"></span>
-                <span class="block h-0.5 w-6 bg-gray-800 transition-all duration-300 ease-in-out"></span>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="navigation-bar absolute top-full right-[-100%] w-64 md:w-auto h-screen md:h-auto bg-gradient-to-r from-red-700 to-purple-700 md:bg-transparent text-center transition-all duration-500 ease-in-out opacity-0 md:opacity-100 md:static flex-col md:flex-row md:flex items-center md:justify-center pt-10 md:pt-0">
-                <ul class="menu-list flex flex-col md:flex-row md:gap-8">
-                    <li class="my-2 md:my-0 transition-opacity duration-300 ease-in-out md:opacity-100 md:transform-none"> <a href="index.html" class="text-white md:text-black text-lg font-semibold hover:text-pink-200 md:hover:border-b-2 md:hover:border-red-500 py-2 md:py-0">Home</a></li>
-                    <li class="my-2 md:my-0 transition-opacity duration-300 ease-in-out md:opacity-100 md:transform-none"><a href="#service" class="text-white md:text-black text-lg font-semibold hover:text-pink-200 md:hover:border-b-2 md:hover:border-red-500 py-2 md:py-0">Service</a></li>
-                    <li class="my-2 md:my-0 transition-opacity duration-300 ease-in-out md:opacity-100 md:transform-none"><a href="#pricing" class="text-white md:text-black text-lg font-semibold hover:text-pink-200 md:hover:border-b-2 md:hover:border-red-500 py-2 md:py-0">Pricing</a></li>
-                    <li class="my-2 md:my-0 transition-opacity duration-300 ease-in-out md:opacity-100 md:transform-none"><a href="#blog" class="text-white md:text-black text-lg font-semibold hover:text-pink-200 md:hover:border-b-2 md:hover:border-red-500 py-2 md:py-0">Blog</a></li>
-                    <li class="my-2 md:my-0 transition-opacity duration-300 ease-in-out md:opacity-100 md:transform-none"><a href="#about" class="text-white md:text-black text-lg font-semibold hover:text-pink-200 md:hover:border-b-2 md:hover:border-red-500 py-2 md:py-0">About</a></li>
-                    <li class="my-2 md:my-0 transition-opacity duration-300 ease-in-out md:opacity-100 md:transform-none"><a href="#contact" class="text-white md:text-black text-lg font-semibold hover:text-pink-200 md:hover:border-b-2 md:hover:border-red-500 py-2 md:py-0">Contact</a></li>
-                    <button id="top1-btn" class="md:hidden py-3 px-6 text-lg text-black bg-white rounded-sm w-4/5 mx-auto mt-4">Get started <a href="pages/Contact.html"></a></button>
+            <div class="navigation-bar">
+                <ul class="menu-list">
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <button id="top1-btn">Get started <a href="pages/Contact.html"></a></button>
                 </ul>
             </div>
-            <button id="top-btn" class="hidden md:block py-2 px-6 text-base text-white bg-red-600 hover:bg-gradient-to-r hover:from-pink-600 hover:to-red-500 rounded-full">Get started <a href="pages/Contact.html"></a></button>
+            <button id="top-btn">Get started <a href="pages/Contact.html"></a></button>
         </nav>
     </header>
 
 
     <!-- hero design -->
 
-    <section class="box-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="main-hero grid md:grid-cols-2 gap-x-4 gap-y-12 md:gap-y-4 pt-8 pb-12 md:pb-0">
-            <div class="left-hero flex flex-col gap-4 pt-8 md:pt-0 w-full order-2 md:order-1">
-                <div class="badge-hero flex items-center gap-2 py-1 px-3 bg-red-700/10 rounded-full w-full sm:w-4/5 md:w-3/5 lg:w-1/2 hover:bg-transparent hover:border-2 hover:border-red-500 transition-all duration-300 cursor-pointer self-start md:self-auto mt-12 md:mt-0 mb-2 md:mb-0">
-                    <img src="images/icons/red-star.png" alt="shining-star" class="w-4 h-4 rounded-full">
-                    <h1 class="text-sm font-semibold text-red-700">Welcome to NeuroCart</h1>
+    <section class="box-container">
+        <div class="main-hero">
+            <div class="left-hero">
+                <div class="badge-hero">
+                    <img src="images/icons/red-star.png" alt="shining-star">
+                    <h1>Welcome to NeuroCart</h1>
                 </div>
 
-                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-800 mt-2">AI-Driven Shopping Smarter,Faster For Enterprice</h2>
-                <p class="text-base sm:text-lg md:text-xl leading-relaxed text-gray-600 mb-3 mt-2">Revolutionize your eCommerce business with AI-powered live shopping, personalized recommendations,
+                <h2>AI-Driven Shopping Smarter,Faster For Enterprice</h2>
+                <p>Revolutionize your eCommerce business with AI-powered live shopping, personalized recommendations,
                     and real-time audience engagement.</p>
-                <div class="hero-buttonns flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mt-4">
-                    <button id="hero-btn" class="py-3 px-8 text-base font-semibold text-white bg-red-600 hover:bg-gradient-to-r from-pink-600 to-red-500 rounded-full shadow-md transition-transform duration-150 ease-in-out hover:scale-105">Start Free Trial</button>
+                <div class="hero-buttonns">
+                    <button id="hero-btn">Start Free Trial</button>
 
-                    <div class="book-1 flex -space-x-3 items-center">
-                        <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK" class="w-10 h-10 rounded-full border-2 border-white shadow">
-                        <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin" class="w-10 h-10 rounded-full border-2 border-white shadow">
-                        <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda" class="w-10 h-10 rounded-full border-2 border-white shadow">
-                        <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo" class="w-10 h-10 rounded-full border-2 border-white shadow">
+                    <div class="book-1">
+                        <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK">
+                        <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin">
+                        <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda">
+                        <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo">
                     </div>
-                    <button id="hero-btn-book" class="py-3 px-8 text-base font-semibold text-gray-700 bg-gray-200 hover:bg-gray-300 rounded-full shadow-md transition-transform duration-150 ease-in-out hover:scale-105">Book Now</button>
+                    <button id="hero-btn">Book Now</button>
 
 
                 </div>
@@ -74,25 +73,30 @@
 
             </div>
 
-            <div class="right-hero flex justify-center md:justify-end relative order-1 md:order-2">
+            <div class="right-hero">
 
-                <img src="images/hero-1.jpg" alt="hero-1" class="relative w-full max-w-md md:max-w-lg lg:max-w-xl h-auto md:h-[560px] object-cover rounded-lg shadow-xl self-center md:self-auto">
+                <img src="images/hero-1.jpg" alt="hero-1">
 
-                <div class="badge-1-right hidden md:flex flex-col absolute bottom-12 left-[60%] md:left-[unset] md:right-[-2rem] xl:right-[-3rem] w-[120px] h-[150px] rounded-lg items-center justify-center p-2 animate-floatUpDown" style="background-image: url('images/bottom-left badge.jpg'); background-size: cover; background-position: center;">
-                    <!-- Empty span for potential background shape if needed by original CSS -->
-                    <span class="p-1 bg-black/20 rounded-md hidden"></span> 
-                    <img src="images/icons/play-button.png" alt="play-button" class="w-12 h-12 mt-auto mb-4 opacity-80">
+                <div class="badge-1-right">
+                    <span></span>
+
+                    <!-- <img src="images/bottom-left badge.jpg" alt="bottom-left"> -->
+                    <img src="images/icons/play-button.png" alt="play-button">
+
+
+
+
                 </div>
 
-                <div class="badge-r-2 hidden md:flex flex-col absolute top-12 left-[-2rem] md:left-[-3rem] w-[100px] h-[150px] rounded-lg items-center justify-end p-2 animate-floatUpDown" style="background-image: url('images/top-right-badge.jpg'); background-size: cover; background-position: center;">
-                    <span class="hidden"></span> <!-- Empty span -->
-                    <h1 class="text-xs text-white bg-red-700/70 px-2 py-1 rounded-sm mb-2 text-center">Powered by AI</h1>
+                <div class="badge-r-2">
+                    <span></span>
+                    <h1>Powered by AI</h1>
                 </div>
 
-                <div class="badge-r-3 flex flex-col absolute p-3 md:p-4 whitespace-nowrap bottom-[-2rem] left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:bottom-8 sm:right-8 md:bottom-4 md:left-[-2rem] xl:left-[-4rem] bg-red-700/20 w-auto rounded-lg items-center text-center animate-floatUpDown backdrop-blur-sm">
-                    <h1 class="text-xs sm:text-sm font-semibold text-white py-1 rounded-sm">Session Revenue</h1>
-                    <span class="block w-3 h-3 border-[3px] md:border-[4px] border-red-500 rounded-full my-1 md:my-2"></span>
-                    <h2 class="text-sm sm:text-base font-bold text-white py-1 rounded-sm">$540,000</h2>
+                <div class="badge-r-3">
+                    <h1>Session Revenue</h1>
+                    <span></span>
+                    <h2>$540,000</h2>
 
                 </div>
             </div>
@@ -101,36 +105,36 @@
 
     <!-- company section -->
 
-    <section class="company bg-zinc-800 py-12 md:py-20 overflow-hidden">
-        <div class="main-company flex flex-row gap-8 items-center justify-center mb-20 mt-20 md:mt-60 whitespace-nowrap animate-scroll">
-            <img src="images/company-logo/deepseek_wordmark.svg" alt="lock-icon" class="w-[150px] h-auto">
-            <img src="images/company-logo/tailwindcss-wordmark-dark.svg" alt="lock-icon" class="w-[150px] h-auto">
-            <img src="images/company-logo/claude-ai-wordmark-icon_dark.svg" alt="lock-icon" class="w-[150px] h-auto">
-            <img src="images/company-logo/stripe.svg" alt="lock-icon" class="w-[150px] h-auto">
-            <img src="images/company-logo/Dropbox_wordmark_dark.svg" alt="Dropbox_wordmark_dark" class="w-[150px] h-auto">
-            <img src="images/company-logo/nextjs_logo_dark.svg" alt="" class="w-[150px] h-auto">
-            <img src="images/company-logo/clerk-dark.svg" alt="clerk-dark" class="w-[150px] h-auto">
-            <img src="images/company-logo/supabase_wordmark_dark.svg" alt="lock-icon" class="w-[150px] h-auto">
-            <img src="images/company-logo/mongodb-wordmark.svg" alt="lock-icon" class="w-[150px] h-auto">
-            <img src="images/company-logo/shopify-wordmark-dark.svg" alt="" class="w-[150px] h-auto">
-            <img src="images/company-logo/webflow-wordmark-dark.svg" alt="clerk-dark" class="w-[150px] h-auto">
-            <img src="images/company-logo/sanity.svg" alt="clerk-dark" class="w-[150px] h-auto">
-            <img src="images/company-logo/Dugsiiye-logo.png" alt="clerk-dark" class="w-[150px] h-auto">
-            <img src="images/company-logo/white-logo.png" alt="clerk-dark" class="w-[150px] h-auto">
-            <img src="images/company-logo/deepseek_wordmark.svg" alt="lock-icon" class="w-[150px] h-auto">
-            <img src="images/company-logo/tailwindcss-wordmark-dark.svg" alt="lock-icon" class="w-[150px] h-auto">
-            <img src="images/company-logo/claude-ai-wordmark-icon_dark.svg" alt="lock-icon" class="w-[150px] h-auto">
-            <img src="images/company-logo/stripe.svg" alt="lock-icon" class="w-[150px] h-auto">
-            <img src="images/company-logo/Dropbox_wordmark_dark.svg" alt="Dropbox_wordmark_dark" class="w-[150px] h-auto">
-            <img src="images/company-logo/nextjs_logo_dark.svg" alt="" class="w-[150px] h-auto">
-            <img src="images/company-logo/clerk-dark.svg" alt="clerk-dark" class="w-[150px] h-auto">
-            <img src="images/company-logo/supabase_wordmark_dark.svg" alt="lock-icon" class="w-[150px] h-auto">
-            <img src="images/company-logo/mongodb-wordmark.svg" alt="lock-icon" class="w-[150px] h-auto">
-            <img src="images/company-logo/shopify-wordmark-dark.svg" alt="" class="w-[150px] h-auto">
-            <img src="images/company-logo/webflow-wordmark-dark.svg" alt="clerk-dark" class="w-[150px] h-auto">
-            <img src="images/company-logo/sanity.svg" alt="clerk-dark" class="w-[150px] h-auto">
-            <img src="images/company-logo/Dugsiiye-logo.png" alt="clerk-dark" class="w-[150px] h-auto">
-            <img src="images/company-logo/white-logo.png" alt="clerk-dark" class="w-[150px] h-auto">
+    <section class=" company">
+        <div class="main-company">
+            <img src="images/company-logo/deepseek_wordmark.svg" alt="lock-icon">
+            <img src="images/company-logo/tailwindcss-wordmark-dark.svg" alt="lock-icon">
+            <img src="images/company-logo/claude-ai-wordmark-icon_dark.svg" alt="lock-icon">
+            <img src="images/company-logo/stripe.svg" alt="lock-icon">
+            <img src="images/company-logo/Dropbox_wordmark_dark.svg" alt="Dropbox_wordmark_dark">
+            <img src="images/company-logo/nextjs_logo_dark.svg" alt="">
+            <img src="images/company-logo/clerk-dark.svg" alt="clerk-dark">
+            <img src="images/company-logo/supabase_wordmark_dark.svg" alt="lock-icon">
+            <img src="images/company-logo/mongodb-wordmark.svg" alt="lock-icon">
+            <img src="images/company-logo/shopify-wordmark-dark.svg" alt="">
+            <img src="images/company-logo/webflow-wordmark-dark.svg" alt="clerk-dark">
+            <img src="images/company-logo/sanity.svg" alt="clerk-dark">
+            <img src="images/company-logo/Dugsiiye-logo.png" alt="clerk-dark">
+            <img src="images/company-logo/white-logo.png" alt="clerk-dark">
+            <img src="images/company-logo/deepseek_wordmark.svg" alt="lock-icon">
+            <img src="images/company-logo/tailwindcss-wordmark-dark.svg" alt="lock-icon">
+            <img src="images/company-logo/claude-ai-wordmark-icon_dark.svg" alt="lock-icon">
+            <img src="images/company-logo/stripe.svg" alt="lock-icon">
+            <img src="images/company-logo/Dropbox_wordmark_dark.svg" alt="Dropbox_wordmark_dark">
+            <img src="images/company-logo/nextjs_logo_dark.svg" alt="">
+            <img src="images/company-logo/clerk-dark.svg" alt="clerk-dark">
+            <img src="images/company-logo/supabase_wordmark_dark.svg" alt="lock-icon">
+            <img src="images/company-logo/mongodb-wordmark.svg" alt="lock-icon">
+            <img src="images/company-logo/shopify-wordmark-dark.svg" alt="">
+            <img src="images/company-logo/webflow-wordmark-dark.svg" alt="clerk-dark">
+            <img src="images/company-logo/sanity.svg" alt="clerk-dark">
+            <img src="images/company-logo/Dugsiiye-logo.png" alt="clerk-dark">
+            <img src="images/company-logo/white-logo.png" alt="clerk-dark">
         </div>
     </section>
 
@@ -140,19 +144,19 @@
 
 
 
-    <section class="box-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="service">
+    <section class="box-container" id="service">
 
-        <div class="brief-description flex flex-col gap-4 justify-center items-center my-20 md:my-40 mx-auto w-full lg:w-4/5 px-4 text-center">
+        <div class="brief-description">
 
-            <div class="title-service flex flex-row gap-2 items-center justify-center py-1 px-3 bg-gradient-to-r from-[#a83279] to-[#ff3131] hover:from-[#ff3131] hover:to-[#a83279] rounded-md w-auto sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-[15%]">
-                <img src="/images/icons/stars.png" alt="stars" class="w-6 h-6 md:w-8 md:h-8 rounded-none">
-                <h1 class="text-lg md:text-xl font-semibold text-white">Our Servise</h1>
+            <div class="title-service">
+                <img src="/images/icons/stars.png" alt="stars">
+                <h1>Our Servise</h1>
             </div>
-            <div class="breif-data flex flex-col gap-4 mt-4 md:mt-8 mb-[-4rem] w-full">
+            <div class="breif-data">
 
 
-                <span class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 text-center w-full md:w-4/5 mx-auto">🚀 AI-Powered eCommerce Services</span>
-                <p class="text-sm sm:text-base md:text-lg leading-relaxed text-gray-700 text-center w-full md:w-4/5 mx-auto">Enhance your online store with cutting-edge AI-driven solutions. From interactive shopping
+                <span>🚀 AI-Powered eCommerce Services</span>
+                <p>Enhance your online store with cutting-edge AI-driven solutions. From interactive shopping
                     experiences to real-time analytics, our services are designed to boost engagement, increase
                     conversions, and personalize customer journeys. Explore our powerful tools and transform the way you
                     sell online.</p>
@@ -161,50 +165,50 @@
         </div>
 
 
-        <div class="service-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-8 mb-12 md:mb-20 px-4 md:px-0">
+        <div class="service-grid">
 
-            <div class="service-1 s1 flex flex-col gap-3 p-4 md:p-6 rounded-lg border-2 border-transparent hover:border-pink-500/30 bg-gradient-to-b from-[#863661] to-[#080305] hover:from-[#080305] hover:to-[#863661] transition-all duration-300 ease-in-out transform hover:scale-105">
-                <h2 class="text-3xl md:text-4xl p-2 self-start rounded-md bg-white/10 w-auto">🛍️</h2>
-                <h1 class="text-lg md:text-xl font-semibold text-white">AI-Powered Live Shopping </h1>
-                <p class="text-sm md:text-base text-gray-200 leading-relaxed">Enhance customer experience with real-time AI-driven live video shopping, boosting engagement and
+            <div class="service-1 s1">
+                <h2>🛍️</h2>
+                <h1>AI-Powered Live Shopping </h1>
+                <p>Enhance customer experience with real-time AI-driven live video shopping, boosting engagement and
                     conversions.</p>
 
             </div>
 
-            <div class="service-1 s2 flex flex-col gap-3 p-4 md:p-6 rounded-lg border-2 border-transparent hover:border-pink-500/30 bg-gradient-to-b from-[#863661] to-[#080305] hover:from-[#080305] hover:to-[#863661] transition-all duration-300 ease-in-out transform hover:scale-105">
-                <h2 class="text-3xl md:text-4xl p-2 self-start rounded-md bg-white/10 w-auto">🤖</h2>
-                <h1 class="text-lg md:text-xl font-semibold text-white">Smart Product Recommendations </h1>
-                <p class="text-sm md:text-base text-gray-200 leading-relaxed">Leverage AI to deliver personalized product suggestions based on user behavior, increasing sales and
+            <div class="service-1 s2">
+                <h2>🤖</h2>
+                <h1>Smart Product Recommendations </h1>
+                <p>Leverage AI to deliver personalized product suggestions based on user behavior, increasing sales and
                     retention.</p>
             </div>
 
-            <div class="service-1 s3 flex flex-col gap-3 p-4 md:p-6 rounded-lg border-2 border-transparent hover:border-pink-500/30 bg-gradient-to-b from-[#863661] to-[#080305] hover:from-[#080305] hover:to-[#863661] transition-all duration-300 ease-in-out transform hover:scale-105">
-                <h2 class="text-3xl md:text-4xl p-2 self-start rounded-md bg-white/10 w-auto">🎥</h2>
-                <h1 class="text-lg md:text-xl font-semibold text-white">Interactive Audience Engagement </h1>
-                <p class="text-sm md:text-base text-gray-200 leading-relaxed"> Use gamified experiences, live polls, and real-time chat to keep shoppers engaged and entertained.
+            <div class="service-1 s3">
+                <h2>🎥</h2>
+                <h1>Interactive Audience Engagement </h1>
+                <p> Use gamified experiences, live polls, and real-time chat to keep shoppers engaged and entertained.
                 </p>
             </div>
 
 
-            <div class="service-1 s4 flex flex-col gap-3 p-4 md:p-6 rounded-lg border-2 border-transparent hover:border-pink-500/30 bg-gradient-to-b from-[#863661] to-[#080305] hover:from-[#080305] hover:to-[#863661] transition-all duration-300 ease-in-out transform hover:scale-105">
-                <h2 class="text-3xl md:text-4xl p-2 self-start rounded-md bg-white/10 w-auto">📊</h2>
-                <h1 class="text-lg md:text-xl font-semibold text-white">AI-Powered Analytics & Insights</h1>
-                <p class="text-sm md:text-base text-gray-200 leading-relaxed">Get real-time analytics and actionable insights to optimize marketing strategies and improve customer
+            <div class="service-1 s4">
+                <h2>📊</h2>
+                <h1>AI-Powered Analytics & Insights</h1>
+                <p>Get real-time analytics and actionable insights to optimize marketing strategies and improve customer
                     experience.</p>
 
             </div>
 
-            <div class="service-1 s5 flex flex-col gap-3 p-4 md:p-6 rounded-lg border-2 border-transparent hover:border-pink-500/30 bg-gradient-to-b from-[#863661] to-[#080305] hover:from-[#080305] hover:to-[#863661] transition-all duration-300 ease-in-out transform hover:scale-105">
-                <h2 class="text-3xl md:text-4xl p-2 self-start rounded-md bg-white/10 w-auto">🏠</h2>
-                <h1 class="text-lg md:text-xl font-semibold text-white">Seamless Multi-Category Shopping </h1>
-                <p class="text-sm md:text-base text-gray-200 leading-relaxed">Support diverse categories like fashion, beauty, electronics, and home essentials in a smooth
+            <div class="service-1 s5">
+                <h2>🏠</h2>
+                <h1>Seamless Multi-Category Shopping </h1>
+                <p>Support diverse categories like fashion, beauty, electronics, and home essentials in a smooth
                     shopping journey.</p>
             </div>
 
-            <div class="service-1 s6 flex flex-col gap-3 p-4 md:p-6 rounded-lg border-2 border-transparent hover:border-pink-500/30 bg-gradient-to-b from-[#863661] to-[#080305] hover:from-[#080305] hover:to-[#863661] transition-all duration-300 ease-in-out transform hover:scale-105">
-                <h2 class="text-3xl md:text-4xl p-2 self-start rounded-md bg-white/10 w-auto">💬</h2>
-                <h1 class="text-lg md:text-xl font-semibold text-white">AI-Based Customer Feedback & Assistance </h1>
-                <p class="text-sm md:text-base text-gray-200 leading-relaxed">Provide instant AI-powered responses and feedback to shoppers, improving satisfaction and reducing
+            <div class="service-1 s6">
+                <h2>💬</h2>
+                <h1>AI-Based Customer Feedback & Assistance </h1>
+                <p>Provide instant AI-powered responses and feedback to shoppers, improving satisfaction and reducing
                     support costs.</p>
             </div>
 
@@ -223,100 +227,105 @@
 
 
     <!-- trafic section -->
-    <div class="traf-bgcolor bg-gradient-to-r from-[#FAD0C4] to-[#FFD1FF] py-12 md:py-24">
+    <div class="traf-bgcolor">
 
    
-    <section class="box-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div class="main-trafic grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center my-12 md:my-20 lg:my-32 relative">
-            <div class="traf-1 flex flex-col gap-8">
+    <section class="box-container">
+        <div class="main-trafic">
+            <div class="traf-1">
 
-                <!-- Desktop and larger screens image layout -->
-                <div class="trafic-1 hidden lg:flex flex-col gap-8">
-                    <div class="tr-1 flex justify-around">
-                        <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK" class="w-12 h-12 animate">
-                        <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin" class="w-12 h-12 animate">
-                        <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda" class="w-12 h-12 animate">
-                        <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo" class="w-12 h-12 animate">
-                        <img src="images/Users/Haboon Abdi.jpg" alt="Haboon" class="w-12 h-12 animate">
-                        <img src="images/Users/Tasniim Abdi.jpg" alt="Tasniim" class="w-12 h-12 animate">
-                    </div>
-                    <div class="tr-2 flex justify-around ml-0"> <!-- Original CSS has ml-0 for tr-2 -->
-                        <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK" class="w-12 h-12 animate">
-                        <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin" class="w-12 h-12 animate">
-                        <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda" class="w-12 h-12 animate">
-                        <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo" class="w-12 h-12 animate">
-                        <img src="images/Users/Haboon Abdi.jpg" alt="Haboon" class="w-12 h-12 animate">
-                        <img src="images/Users/Tasniim Abdi.jpg" alt="Tasniim" class="w-12 h-12 animate">
-                    </div>
-                    <div class="tr-3 flex justify-around">
-                        <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK" class="w-12 h-12 animate">
-                        <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin" class="w-12 h-12 animate">
-                        <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda" class="w-12 h-12 animate">
-                        <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo" class="w-12 h-12 animate">
-                        <img src="images/Users/Haboon Abdi.jpg" alt="Haboon" class="w-12 h-12 animate">
-                        <img src="images/Users/Tasniim Abdi.jpg" alt="Tasniim" class="w-12 h-12 animate">
-                    </div>
-                    <div class="tr-4 flex justify-around ml-0 lg:ml-[17rem] lg:-mt-[23rem]"> <!-- Complex positioning from original CSS -->
-                        <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK" class="w-12 h-12 animate">
-                        <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin" class="w-12 h-12 animate">
-                        <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda" class="w-12 h-12 animate">
-                        <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo" class="w-12 h-12 animate">
-                        <img src="images/Users/Haboon Abdi.jpg" alt="Haboon" class="w-12 h-12 animate">
-                        <img src="images/Users/Tasniim Abdi.jpg" alt="Tasniim" class="w-12 h-12 animate">
-                    </div>
-                </div>
 
-                <!-- Tablet image layout (original .only-tablet) -->
-                <div class="trafic-1 only-tablet hidden sm:grid sm:grid-cols-2 gap-4 md:gap-8 lg:hidden">
-                    <div class="tr-1 flex flex-col items-center gap-4">
-                        <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK" class="w-12 h-12 animate">
-                        <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin" class="w-12 h-12 animate">
-                        <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda" class="w-12 h-12 animate">
+                <div class="trafic-1">
+
+                    <div class="tr-1">
+                        <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK">
+                        <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin">
+                        <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda">
+                        <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo">
+                        <img src="images/Users/Haboon Abdi.jpg" alt="Haboon">
+                        <img src="images/Users/Tasniim Abdi.jpg" alt="Tasniim">
                     </div>
-                    <div class="tr-2 flex flex-col items-center gap-4">
-                        <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo" class="w-12 h-12 animate">
-                        <img src="images/Users/Haboon Abdi.jpg" alt="Haboon" class="w-12 h-12 animate">
-                        <img src="images/Users/Tasniim Abdi.jpg" alt="Tasniim" class="w-12 h-12 animate">
+                    <div class="tr-2">
+                        <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK">
+                        <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin">
+                        <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda">
+                        <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo">
+                        <img src="images/Users/Haboon Abdi.jpg" alt="Haboon">
+                        <img src="images/Users/Tasniim Abdi.jpg" alt="Tasniim">
                     </div>
-                     <div class="tr-3 flex flex-col items-center gap-4 sm:mt-4">
-                        <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK" class="w-12 h-12 animate">
-                        <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin" class="w-12 h-12 animate">
-                        <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda" class="w-12 h-12 animate">
+                    <div class="tr-3">
+                        <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK">
+                        <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin">
+                        <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda">
+                        <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo">
+                        <img src="images/Users/Haboon Abdi.jpg" alt="Haboon">
+                        <img src="images/Users/Tasniim Abdi.jpg" alt="Tasniim">
                     </div>
-                    <div class="tr-4 flex flex-col items-center gap-4 sm:mt-4">
-                        <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo" class="w-12 h-12 animate">
-                        <img src="images/Users/Haboon Abdi.jpg" alt="Haboon" class="w-12 h-12 animate">
-                        <img src="images/Users/Tasniim Abdi.jpg" alt="Tasniim" class="w-12 h-12 animate">
+                    <div class="tr-4">
+                        <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK">
+                        <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin">
+                        <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda">
+                        <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo">
+                        <img src="images/Users/Haboon Abdi.jpg" alt="Haboon">
+                        <img src="images/Users/Tasniim Abdi.jpg" alt="Tasniim">
                     </div>
+
                 </div>
-                 <!-- Mobile image layout -->
-                <div class="trafic-1 lg:hidden grid grid-cols-3 gap-4">
-                    <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK" class="w-12 h-12 animate mx-auto">
-                    <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin" class="w-12 h-12 animate mx-auto">
-                    <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda" class="w-12 h-12 animate mx-auto">
-                    <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo" class="w-12 h-12 animate mx-auto">
-                    <img src="images/Users/Haboon Abdi.jpg" alt="Haboon" class="w-12 h-12 animate mx-auto">
-                    <img src="images/Users/Tasniim Abdi.jpg" alt="Tasniim" class="w-12 h-12 animate mx-auto">
+                <div class="trafic-1 only-tablet">
+
+                    <div class="tr-1">
+                        <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK">
+                        <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin">
+                        <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda">
+                        <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo">
+                        <img src="images/Users/Haboon Abdi.jpg" alt="Haboon">
+                        <img src="images/Users/Tasniim Abdi.jpg" alt="Tasniim">
+                    </div>
+                    <div class="tr-2">
+                        <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK">
+                        <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin">
+                        <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda">
+                        <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo">
+                        <img src="images/Users/Haboon Abdi.jpg" alt="Haboon">
+                        <img src="images/Users/Tasniim Abdi.jpg" alt="Tasniim">
+                    </div>
+                    <div class="tr-3">
+                        <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK">
+                        <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin">
+                        <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda">
+                        <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo">
+                        <img src="images/Users/Haboon Abdi.jpg" alt="Haboon">
+                        <img src="images/Users/Tasniim Abdi.jpg" alt="Tasniim">
+                    </div>
+                    <div class="tr-4">
+                        <img src="images/Users/ABDIRIZAK.jpg" alt="ABDIRIZAK">
+                        <img src="images/Users/MR-Sharafdiin img.webp" alt="MR-Sharafdiin">
+                        <img src="images/Users/MC-Hamuuda img.webp" alt="MC-Hamuuda">
+                        <img src="images/Users/Safiyo Mohamed.jpg" alt="Safiyo">
+                        <img src="images/Users/Haboon Abdi.jpg" alt="Haboon">
+                        <img src="images/Users/Tasniim Abdi.jpg" alt="Tasniim">
+                    </div>
+
                 </div>
             </div>
-            <div class="traf-2 bg-red-700/10 p-6 md:p-8 rounded-lg shadow-lg">
-                <div class="trafic-2 flex flex-col gap-4 md:gap-6">
-                    <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold md:font-bold text-gray-800 leading-tight">Next-Gen Live eCommerce Solutions</h2>
-                    <p class="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">Terrific's Live eCommerce platform offers the most advanced solutions for live video shopping,
+            <div class="traf-2">
+                <div class="trafic-2">
+                    <h2>Next-Gen Live eCommerce Solutions</h2>
+                    <p>Terrific's Live eCommerce platform offers the most advanced solutions for live video shopping,
                         audience engagement, real-time analytics, Gamified interactive experiences, and AI feedback.
                     </p>
-                    <div class="tr-row grid grid-cols-2 gap-3 md:gap-4 items-center w-full sm:w-3/4 md:w-2/3 lg:w-3/4 xl:w-1/2 mt-4">
-                        <span class="py-2 px-3 sm:px-6 bg-[#940000] text-white rounded-md text-xs sm:text-sm text-center hover:bg-transparent hover:border-2 hover:border-[#bc1212] hover:text-black transition-colors duration-300 cursor-pointer">Fashion</span>
-                        <span class="py-2 px-3 sm:px-6 bg-[#940000] text-white rounded-md text-xs sm:text-sm text-center hover:bg-transparent hover:border-2 hover:border-[#bc1212] hover:text-black transition-colors duration-300 cursor-pointer">Beauty</span>
-                        <span class="py-2 px-3 sm:px-6 bg-[#940000] text-white rounded-md text-xs sm:text-sm text-center hover:bg-transparent hover:border-2 hover:border-[#bc1212] hover:text-black transition-colors duration-300 cursor-pointer">Home</span>
-                        <span class="py-2 px-3 sm:px-6 bg-[#940000] text-white rounded-md text-xs sm:text-sm text-center hover:bg-transparent hover:border-2 hover:border-[#bc1212] hover:text-black transition-colors duration-300 cursor-pointer">Electronic</span>
+                    <div class="tr-row">
+                        <span>Fashion</span>
+                        <span>Beauty</span>
+                        <span>Home</span>
+                        <span>Electronic</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="abs-img hidden lg:block absolute top-1/2 left-16 xl:left-36 transform -translate-y-1/2 z-0">
-            <img src="images/icons/democracy.gif" alt="democracy" class="w-32 h-32 md:w-40 md:h-40 rounded-none opacity-50">
+        <div class="abs-img">
+            <img src="images/icons/democracy.gif" alt="democracy">
         </div>
 
     </section>
@@ -324,37 +333,37 @@
 </div>
 
     <!-- about section -->
-    <section class="box-container about-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="about">
-        <div class="about-grid grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center my-12 md:my-20 lg:mt-60 lg:mb-20">
+    <section class="box-container about-section" id="about">
+        <div class="about-grid">
 
 
-            <div class="about-left flex flex-col gap-4 md:gap-6 text-center md:text-left order-2 md:order-1 mt-8 md:mt-0">
-                <div class="badge-leftabt flex flex-row gap-2 items-center py-1.5 px-3 rounded-md bg-[#ff3131] hover:bg-purple-500/60 transition-colors duration-300 w-full sm:w-4/5 md:w-[65%] self-center md:self-start">
-                    <img src="images/icons/rocket-red.png" alt="rocket-blue" class="w-6 h-6 md:w-7 md:h-7 rounded-none">
-                    <h1 class="text-sm md:text-base font-semibold text-white">Empowering Businesses with Digital Innovation</h1>
+            <div class="about-left">
+                <div class="badge-leftabt">
+                    <img src="images/icons/rocket-red.png" alt="rocket-blue">
+                    <h1>Empowering Businesses with Digital Innovation</h1>
                 </div>
 
-                <h1 class="text-2xl sm:text-3xl font-bold text-gray-800 mt-2">Who We Are</h1>
-                <p class="text-base sm:text-lg text-gray-700 leading-relaxed">At NeuroCart, we revolutionize online shopping by integrating cutting-edge AI to provide personalized
+                <h1>Who We Are</h1>
+                <p>At NeuroCart, we revolutionize online shopping by integrating cutting-edge AI to provide personalized
                     recommendations, automated assistance, and seamless transactions. Our platform is designed to
                     enhance user experience, making shopping faster, smarter, and more intuitive.</p>
 
-                <h1 class="text-2xl sm:text-3xl font-bold text-gray-800 mt-4">🌍 Why Choose NeuroCart?</h1>
-                <p class="text-base sm:text-lg text-gray-700 leading-relaxed">🛍️ AI-Powered Personalization </p>
-                <p class="text-base sm:text-lg text-gray-700 leading-relaxed">🤖 Virtual Shopping Assistant </p>
-                <p class="text-base sm:text-lg text-gray-700 leading-relaxed">🚀 Lightning-Fast Transactions</p>
-                <p class="text-base sm:text-lg text-gray-700 leading-relaxed">📊 Data-Driven Analytics</p>
-                <p class="text-base sm:text-lg text-gray-700 leading-relaxed">🔒 Enhanced Security</p>
+                <h1>🌍 Why Choose NeuroCart?</h1>
+                <p>🛍️ AI-Powered Personalization </p>
+                <p>🤖 Virtual Shopping Assistant </p>
+                <p>🚀 Lightning-Fast Transactions</p>
+                <p>📊 Data-Driven Analytics</p>
+                <p>🔒 Enhanced Security</p>
 
 
-                <button class="py-3 px-6 text-base font-semibold text-white bg-red-600 hover:bg-gradient-to-r from-pink-600 to-red-500 rounded-full shadow-md transition-transform duration-150 ease-in-out hover:scale-105 w-full sm:w-1/2 md:w-[30%] self-center md:self-start mt-4">Discover more</button>
+                <button>Discover more</button>
 
 
             </div>
 
-            <div class="about-right order-1 md:order-2 flex justify-center md:justify-end">
+            <div class="about-right">
 
-                <img src="images/about-img.jpg" alt="about-img" class="w-full max-w-sm sm:max-w-md md:w-[70%] lg:w-full h-auto md:h-full object-cover rounded-lg md:rounded-xl shadow-xl md:ml-auto">
+                <img src="images/about-img.jpg" alt="about-img">
 
 
 
@@ -366,41 +375,41 @@
 
     <!-- build-section -->
 
-    <section class="box-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="box-container">
 
 
-        <div class="built-section grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 lg:gap-8 my-20 md:my-32 lg:my-60 items-center">
+        <div class="built-section">
 
-            <div class="left-build flex flex-col gap-3 md:gap-4 text-center md:text-left px-4 md:px-0 order-2 md:order-1">
-                <h1 class="text-lg sm:text-xl md:text-2xl font-semibold py-1 px-3 bg-gradient-to-b from-[#863661] to-black text-white rounded-md w-full sm:w-3/4 md:w-3/5 lg:w-[37%] self-center md:self-start hover:bg-transparent hover:border-2 hover:border-red-700 transition-all duration-300">🚀 Terrific Enterprise</h1>
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mt-2">Built to Give Brands a Competitive Edge</h2>
-                <p class="text-base sm:text-lg text-gray-700 leading-relaxed">Terrific is designed to help brands drive growth by building smarter, more engaging live experiences.
+            <div class="left-build">
+                <h1>🚀 Terrific Enterprise</h1>
+                <h2>Built to Give Brands a Competitive Edge</h2>
+                <p>Terrific is designed to help brands drive growth by building smarter, more engaging live experiences.
                 </p>
-                <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mt-3">More Sales</h3>
-                <p class="text-base sm:text-lg text-gray-700 leading-relaxed">Convert more customers live with our industry-leading video commerce that allows customers to
+                <h3>More Sales</h3>
+                <p>Convert more customers live with our industry-leading video commerce that allows customers to
                     complete the purchase while watching the video.</p>
-                <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mt-3">Always on Brand</h3>
-                <p class="text-base sm:text-lg text-gray-700 leading-relaxed">Keep your brand identity intact while delivering a seamless shopping experience.</p>
-                <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mt-3">Data that Drives Business</h3>
-                <p class="text-base sm:text-lg text-gray-700 leading-relaxed">Get insights into customer behavior and optimize for better conversions.</p>
-                <h4 class="text-lg sm:text-xl font-semibold text-gray-800 mt-3">No credit card required – Start for free!</h4>
-                <button class="py-3 px-6 text-base font-semibold text-white bg-red-600 hover:bg-gradient-to-r from-pink-600 to-red-500 rounded-full shadow-md transition-transform duration-150 ease-in-out hover:scale-105 w-full sm:w-1/2 md:w-[25%] self-center md:self-start mt-4">Get Started</button>
+                <h3>Always on Brand</h3>
+                <p>Keep your brand identity intact while delivering a seamless shopping experience.</p>
+                <h3>Data that Drives Business</h3>
+                <p>Get insights into customer behavior and optimize for better conversions.</p>
+                <h4>No credit card required – Start for free!</h4>
+                <button>Get Started</button>
             </div>
 
-            <div class="right-build relative order-1 md:order-2 w-full max-w-md sm:max-w-lg md:w-[408px] h-[500px] sm:h-[550px] md:h-[600px] rounded-md md:ml-auto lg:ml-12 xl:ml-[13rem] mx-auto" style="background-image: url('images/build-1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-                <!-- Badges will be positioned absolutely within this relative container -->
-                <div class="build-bdge hidden md:flex absolute top-[-0.5rem] right-[-1rem] lg:right-[-3rem] xl:left-[15rem] w-auto sm:w-[65%] p-2 gap-2 items-center bg-gradient-to-b from-[#863661] to-black rounded-md animate-floatUpDown shadow-xl">
-                    <img src="images/icons/data-icon.png" alt="data-icon" class="w-12 h-12 sm:w-16 sm:h-16 rounded-none">
+            <div class="right-build">
+                <!-- <img src="images/build-1.jpg" alt="build-1"> -->
+                <div class="build-bdge">
+                    <img src="images/icons/data-icon.png" alt="data-icon">
                     <div class="bld-badge">
-                        <h1 class="text-sm sm:text-base lg:text-lg font-semibold text-white">Conversion rate</h1>
-                        <h2 class="text-sm sm:text-base lg:text-lg font-bold text-white mt-1">40%</h2>
+                        <h1>Conversion rate</h1>
+                        <h2>40%</h2>
                     </div>
                 </div>
 
 
-                <div class="bld-badge1 hidden md:flex absolute bottom-[-2rem] left-[-1rem] lg:bottom-[-3rem] lg:left-[-4rem] xl:top-[25rem] xl:left-[-10rem] w-auto sm:w-[65%] p-3 flex-col gap-1 bg-gradient-to-b from-[#863661] to-black rounded-md animate-floatUpDown shadow-xl text-center">
-                    <h1 class="text-xl sm:text-2xl lg:text-3xl font-bold text-white">10X</h1>
-                    <h2 class="text-base sm:text-lg lg:text-xl text-white">Viewer interactions</h2>
+                <div class="bld-badge1">
+                    <h1>10X</h1>
+                    <h2>Viewer interactions</h2>
                 </div>
 
             </div>
@@ -415,100 +424,105 @@
 
     <!-- powerfull section -->
     <main>
-        <section class="box-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="main-power grid grid-cols-1 gap-4 my-12 md:my-20 p-6 md:p-8 bg-gradient-to-b from-[#863661] to-[#080305] rounded-md overflow-hidden">
-                <div class="top-power grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <section class="box-container">
+            <div class="main-power">
+                <div class="top-power">
                     <div class="top-1">
-                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">Powerfull integrations withe leading eCommerce platforms </h1>
+                        <h1>Powerfull integrations withe leading eCommerce platforms </h1>
                     </div>
-                    <div class="top-2 flex flex-col sm:flex-row gap-4 md:gap-6 justify-start md:justify-end">
-                        <button id="hero-btn-demo" class="py-3 px-6 text-base font-semibold bg-white text-black rounded-full shadow-md hover:bg-transparent hover:text-white hover:border-2 hover:border-gray-200 transition-all duration-300 ease-in-out">Book a demo</button>
-                        <button id="hero-btn-getstarted" class="py-3 px-6 text-base font-semibold text-white bg-red-600 hover:bg-gradient-to-r from-pink-600 to-red-500 rounded-full shadow-md transition-transform duration-150 ease-in-out hover:scale-105">Get started</button>
-                    </div>
-                </div>
-                <div class="power-companies mt-8 flex overflow-hidden space-x-16">
-                    <div class="power1 flex-none flex space-x-8 animate-scroll">
-                        <img src="images/logo/wordpress.svg" alt="wordpress" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/storyblok.svg" alt="storyblok" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/payload_dark.svg" alt="payload_dark" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/directus.svg" alt="directus" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/builder.svg" alt="builder" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/rowy.svg" alt="rowy" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/tina_wordmark.svg" alt="tina_wordmark" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/mediawiki-wordmark-dark.svg" alt="mediawiki-wordmark-dark" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                         <!-- Duplicate for seamless scroll -->
-                        <img src="images/logo/wordpress.svg" alt="wordpress" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/storyblok.svg" alt="storyblok" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/payload_dark.svg" alt="payload_dark" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/directus.svg" alt="directus" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/builder.svg" alt="builder" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/rowy.svg" alt="rowy" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/tina_wordmark.svg" alt="tina_wordmark" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/mediawiki-wordmark-dark.svg" alt="mediawiki-wordmark-dark" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                    </div>
-                    <div class="power-1 flex-none flex space-x-8 animate-scroll" aria-hidden="true"> <!-- Duplicated for marquee -->
-                        <img src="images/logo/wordpress.svg" alt="wordpress" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/storyblok.svg" alt="storyblok" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/payload_dark.svg" alt="payload_dark" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/directus.svg" alt="directus" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/builder.svg" alt="builder" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/rowy.svg" alt="rowy" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/tina_wordmark.svg" alt="tina_wordmark" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/mediawiki-wordmark-dark.svg" alt="mediawiki-wordmark-dark" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                         <!-- Duplicate for seamless scroll -->
-                        <img src="images/logo/wordpress.svg" alt="wordpress" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/storyblok.svg" alt="storyblok" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/payload_dark.svg" alt="payload_dark" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/directus.svg" alt="directus" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/builder.svg" alt="builder" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/rowy.svg" alt="rowy" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/tina_wordmark.svg" alt="tina_wordmark" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
-                        <img src="images/logo/mediawiki-wordmark-dark.svg" alt="mediawiki-wordmark-dark" class="w-16 h-16 p-1 border-2 border-gray-200 rounded-md">
+                    <div class="top-2">
+                        <button id="hero-btn">Book a demo</button>
+                        <button id="hero-btn">Get started</button>
+
                     </div>
                 </div>
+                <div class="power-companies">
+                    <div class="power1">
+                        <img src="images/logo/wordpress.svg" alt="wordpress">
+                        <img src="images/logo/storyblok.svg" alt="storyblok">
+                        <img src="images/logo/payload_dark.svg" alt="payload_dark">
+                        <img src="images/logo/directus.svg" alt="directus">
+                        <img src="images/logo/builder.svg" alt="builder">
+                        <img src="images/logo/rowy.svg" alt="rowy">
+                        <img src="images/logo/tina_wordmark.svg" alt="tina_wordmark">
+                        <img src="images/logo/mediawiki-wordmark-dark.svg" alt="mediawiki-wordmark-dark">
+
+                    </div>
+                    <div class="power-1">
+                        <img src="images/logo/wordpress.svg" alt="wordpress">
+                        <img src="images/logo/storyblok.svg" alt="storyblok">
+                        <img src="images/logo/payload_dark.svg" alt="payload_dark">
+                        <img src="images/logo/directus.svg" alt="directus">
+                        <img src="images/logo/builder.svg" alt="builder">
+                        <img src="images/logo/rowy.svg" alt="rowy">
+                        <img src="images/logo/tina_wordmark.svg" alt="tina_wordmark">
+                        <img src="images/logo/mediawiki-wordmark-dark.svg" alt="mediawiki-wordmark-dark">
+                    </div>
+                </div>
+
             </div>
+
+
         </section>
+
 
         <!-- under-powerfull section -->
 
-        <section class="box-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-            <div class="main-seat flex flex-col gap-8 md:gap-12">
-                <div class="seat-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                    <div class="m-s-1 p-4 md:p-6 flex flex-col gap-4 border-2 border-gray-800 rounded-md bg-gradient-to-b from-[#863661] to-black hover:from-[#863661] hover:to-[#080305] hover:border-transparent transition-all duration-300">
-                        <h1 class="text-2xl font-semibold text-white">SEARS</h1>
-                        <div class="m-5x flex items-center gap-4 mt-auto pt-12">
-                            <span class="text-5xl md:text-6xl font-bold bg-gradient-to-b from-[#863661] to-white bg-clip-text text-transparent">5X</span>
-                            <h2 class="text-lg md:text-xl text-white leading-snug">eCommerce revenue with Terrific</h2>
+        <section class="box-container">
+
+            <div class="main-seat">
+                <div class="seat-1">
+                    <div class="m-s-1">
+                        <h1>SEARS</h1>
+                        <div class="m-5x">
+                            <span>5X</span>
+                            <h2>eCommerce revenue with Terrific</h2>
+                        </div>
+
+                    </div>
+                    <div class="m-s-1">
+                        <h1>Claro</h1>
+                        <div class="m-5x">
+                            <span>20K+</span>
+                            <h2>traffic on storefront</h2>
                         </div>
                     </div>
-                    <div class="m-s-1 p-4 md:p-6 flex flex-col gap-4 border-2 border-gray-800 rounded-md bg-gradient-to-b from-[#863661] to-black hover:from-[#863661] hover:to-[#080305] hover:border-transparent transition-all duration-300">
-                        <h1 class="text-2xl font-semibold text-white">Claro</h1>
-                        <div class="m-5x flex items-center gap-4 mt-auto pt-12">
-                            <span class="text-5xl md:text-6xl font-bold bg-gradient-to-b from-[#863661] to-white bg-clip-text text-transparent">20K+</span>
-                            <h2 class="text-lg md:text-xl text-white leading-snug">traffic on storefront</h2>
-                        </div>
-                    </div>
-                    <div class="m-s-1 p-4 md:p-6 flex flex-col gap-4 border-2 border-gray-800 rounded-md bg-gradient-to-b from-[#863661] to-black hover:from-[#863661] hover:to-[#080305] hover:border-transparent transition-all duration-300">
-                        <h1 class="text-2xl font-semibold text-white">SAMSUNG</h1>
-                        <div class="m-5x flex items-center gap-4 mt-auto pt-12">
-                            <span class="text-5xl md:text-6xl font-bold bg-gradient-to-b from-[#863661] to-white bg-clip-text text-transparent">50%</span>
-                            <h2 class="text-lg md:text-xl text-white leading-snug"> Customer Acquisition Cost (CAC)</h2>
+
+                    <div class="m-s-1">
+                        <h1>SAMSUNG</h1>
+                        <div class="m-5x">
+                            <span>50%</span>
+                            <h2> Customer Acquisition Cost (CAC)</h2>
                         </div>
                     </div>
                 </div>
 
-                <div class="seat-2 grid grid-cols-1 md:grid-cols-3 items-center gap-6 md:gap-8 mt-8 md:mt-0 px-4 md:px-0">
-                    <div class="s-span md:col-span-2">
-                        <span class="text-lg md:text-xl lg:text-2xl text-gray-700 leading-relaxed">From fashion and beauty to home and electronics, and everything in between, Terrific
+                <div class="seat-2">
+                    <div class="s-span">
+                        <span>From fashion and beauty to home and electronics, and everything in between, Terrific
                             proudly
                             serves the businesses driving the eCommerce industry forward.</span>
                     </div>
-                    <div class="s-btnu text-center md:text-right md:ml-auto">
-                        <button class="py-3 px-6 text-base font-semibold text-white bg-red-600 hover:bg-gradient-to-r from-pink-600 to-red-500 rounded-full shadow-md transition-transform duration-150 ease-in-out hover:scale-105">View all case studies</button>
+
+                    <div class="s-btnu">
+                        <button>View all case studies</button>
                     </div>
+
                 </div>
+
+
+
+
+
+
             </div>
+
+
         </section>
+
+
+
+
 
         <!-- testmonial section -->
         <section class="box-container test-main">
